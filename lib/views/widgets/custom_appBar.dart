@@ -8,7 +8,7 @@ class CustomAppBar extends StatelessWidget {
     return Row(
       children: [
         Text('Notes', style: Theme.of(context).textTheme.headlineSmall),
-        Spacer(),
+        const Spacer(),
         // IconButton(onPressed: () {}, icon: Icon(Icons.search)),
         Container(
           height: 44,
