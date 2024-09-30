@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 import 'custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key, required this.title, required this.icon});
+  const CustomAppBar(
+      {super.key, required this.title, required this.searchIcon});
 
-  final IconData icon;
+  final IconData searchIcon;
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -18,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
         const Spacer(),
         // IconButton(onPressed: () {}, icon: Icon(Icons.search)),
         CustomIcon(
-          icon: icon,
+          icon: searchIcon,
         )
       ],
     );

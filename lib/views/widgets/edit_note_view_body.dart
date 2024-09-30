@@ -16,7 +16,7 @@ class EditNoteViewBody extends StatelessWidget {
           ),
           CustomAppBar(
             title: "Edit Note",
-            icon: Icons.done,
+            searchIcon: Icons.done,
           ),
           SizedBox(
             height: 50,
