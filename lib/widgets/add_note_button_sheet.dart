@@ -16,7 +16,7 @@ class AddNoteButtonSheet extends StatelessWidget {
           listener: (context, state) {
             // TODO: implement listener
             if (state is AddNoteFailure) {
-              print('failied ${state.errMessage}');
+              print('failed ${state.errMessage}');
             }
             if (state is AddNoteSuccess) {
               Navigator.pop(context);
@@ -25,7 +25,7 @@ class AddNoteButtonSheet extends StatelessWidget {
           builder: (context, state) {
             return ModalProgressHUD(
               inAsyncCall: state is AddNoteLoading ? true : false,
-              child: AddNoteForm(),
+              child: const AddNoteForm(),
             );
           },
         ),
