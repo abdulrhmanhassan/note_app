@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-import '../edit_note_view.dart';
+import '../views/edit_note_view.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key});
 
   @override
   Widget build(BuildContext context) {
+    // to open this item
     return GestureDetector(
       onTap: () {
         Navigator.push(context, MaterialPageRoute(
@@ -15,6 +16,7 @@ class NoteItem extends StatelessWidget {
           },
         ));
       },
+      // to change background color & radius
       child: Container(
         padding: const EdgeInsets.only(left: 8, top: 16, bottom: 16),
         decoration: BoxDecoration(
@@ -24,6 +26,7 @@ class NoteItem extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
+            // title & subtitle & delete icon
             ListTile(
               title: const Text(
                 "Note one",
@@ -46,6 +49,7 @@ class NoteItem extends StatelessWidget {
                 size: 28,
               ),
             ),
+            // Date
             Padding(
               padding: const EdgeInsets.only(right: 26.0),
               child: Text('Agu 29.2024',

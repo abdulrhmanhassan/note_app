@@ -11,7 +11,7 @@ class CustomIcon extends StatelessWidget {
       width: 44,
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.05),
-        borderRadius: BorderRadius.circular(17),
+        borderRadius: BorderRadius.circular(12),
       ),
       child: Icon(
         icon,

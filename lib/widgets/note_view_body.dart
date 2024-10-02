@@ -1,4 +1,4 @@
-import 'package:a/views/widgets/custom_app_bar.dart';
+import 'package:a/widgets/custom_app_bar.dart';
 import 'package:flutter/material.dart';
 import 'custom_note_list_view.dart';
 
