@@ -45,11 +45,15 @@ class NoteItem extends StatelessWidget {
                       fontSize: 14, color: Colors.black.withOpacity(0.5)),
                 ),
               ),
-              trailing: const Icon(
-                Icons.delete,
-                color: Colors.black,
-                size: 28,
-              ),
+              trailing: IconButton(
+                  onPressed: () {
+                    note.date;
+                  },
+                  icon: const Icon(
+                    Icons.delete,
+                    color: Colors.black,
+                    size: 28,
+                  )),
             ),
             // Date
             Padding(
