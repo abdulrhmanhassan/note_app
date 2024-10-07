@@ -41,11 +41,11 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
           ),
           // title
           CustomTextField(
-              onChanged: (value) {
-                title = value;
-              },
-              hint: widget.note.title,
-              label: "Title"),
+            onChanged: (value) {
+              title = value;
+            },
+            hint: widget.note.title,
+          ),
           const SizedBox(height: 16),
           // content
           CustomTextField(
@@ -53,7 +53,6 @@ class _EditNoteViewBodyState extends State<EditNoteViewBody> {
               content = value;
             },
             hint: widget.note.content,
-            label: "Content",
             maxLine: 5,
           )
         ],

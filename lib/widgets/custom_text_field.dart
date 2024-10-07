@@ -5,14 +5,14 @@ class CustomTextField extends StatelessWidget {
   const CustomTextField({
     super.key,
     required this.hint,
-    required this.label,
+    this.label,
     this.maxLine = 1,
     this.onSaved,
     this.onChanged,
   });
 
   final String hint;
-  final String label;
+  final String? label;
   final int maxLine;
 
   final void Function(String?)? onSaved;
