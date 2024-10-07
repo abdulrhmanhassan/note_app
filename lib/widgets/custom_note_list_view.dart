@@ -3,7 +3,7 @@ import 'package:a/models/note_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'cutsom_note_icon.dart';
+import 'note_item.dart';
 
 class NoteListView extends StatelessWidget {
   const NoteListView({super.key});

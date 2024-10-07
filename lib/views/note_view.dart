@@ -1,8 +1,6 @@
 import 'package:a/constants.dart';
-import 'package:a/cubits/cubit/notes_cubit.dart';
 import 'package:a/widgets/note_view_body.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../widgets/add_note_button_sheet.dart';
 

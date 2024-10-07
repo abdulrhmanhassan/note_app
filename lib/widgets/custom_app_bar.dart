@@ -4,8 +4,12 @@ import 'custom_icon.dart';
 
 class CustomAppBar extends StatelessWidget {
   const CustomAppBar(
-      {super.key, required this.title, required this.searchIcon});
+      {super.key,
+      required this.title,
+      required this.searchIcon,
+      this.onPressed});
 
+  final void Function()? onPressed;
   final IconData searchIcon;
   final String title;
   @override
@@ -19,6 +23,7 @@ class CustomAppBar extends StatelessWidget {
         const Spacer(),
         // IconButton(onPressed: () {}, icon: Icon(Icons.search)),
         CustomIcon(
+          onPressed: onPressed,
           icon: searchIcon,
         )
       ],
