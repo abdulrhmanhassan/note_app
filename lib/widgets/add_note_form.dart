@@ -1,6 +1,6 @@
 import 'package:a/cubits/add_note_cubit/add_note_cubit.dart';
 import 'package:a/models/note_model.dart';
-import 'package:a/widgets/colors_list_view.dart';
+import 'package:a/widgets/add_note_colors_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
@@ -56,7 +56,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
 
           //  List of Colors
-          const ColorsListView(),
+          const AddNoteColorList(),
 
           const SizedBox(
             height: 30,
